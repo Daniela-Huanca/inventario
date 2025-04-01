@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Arial", sans-serif;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('IMAGENES/FONDO2.avif') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            /* Hace la letra más gruesa */
+            color: rgb(214, 214, 214);
+            text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.932);
+            /* Aumenta la sombra */
+        }
+        
+        .btn {
+            display: block;
+            width: 200px;
+            padding: 15px;
+            margin: 15px auto;
+            font-size: 18px;
+            color: white;
+            background: #007BFF;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background: #0056b3;
+            transform: scale(1.1);
+        }
+        /* Animaciones */
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .btn-ingresar {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background: #007BFF;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        .btn-ingresar:hover {
+            background: #0056b3;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Bienvenido al Menú</h1>
+        <a href="registro_herramienta.php" class="btn">Registrar</a>
+        <a href="index.php" class="btn">Buscar</a>
+
+        <a href="VER.PHP" class="btn">Control de Uso</a>
+    </div>
+
+    <button class="btn-ingresar" onclick="location.href='INDEX.html'">VOLVER</button>
+</body>
+
+</html>
